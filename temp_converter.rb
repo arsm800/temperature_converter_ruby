@@ -17,17 +17,17 @@ temp_unit = gets.chomp
   elsif temp_unit == "K"
     #convert to F
     tempk2f = temperature.to_i * 1.8 - 459.67
-    puts tempk2f + "F"
+    puts "#{tempk2f} F"
     #convert to C
     tempk2c = temperature.to_i - 273.15
-    puts tempk2c + "C"
+    puts "#{tempk2c} C"
   else
     #convert to F
-    tempc2F = temperature.to_i * 1.8 + 32
-    puts tempc2f
+    tempc2f = temperature.to_i * 1.8 + 32
+    puts "#{tempc2f} F"
     #convert to K
     tempc2k = temperature.to_i + 273.15
-    puts tempc2k
+    puts "#{tempc2k} K"
   end
 end
 
